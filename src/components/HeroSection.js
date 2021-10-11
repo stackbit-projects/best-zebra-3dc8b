@@ -16,11 +16,7 @@ export default class HeroSection extends React.Component {
             <section id={sectionId} className="hero">
                 <div className="container container--lg">
                     {title && <h1 className="hero__title">{title}</h1>}
-                    {content && (
-                        <div className="hero__body text-block">
-                            {markdownify(content)}
-                        </div>
-                    )}
+                    {content }
                     {!_.isEmpty(actions) && (
                         <div className="hero__actions button-group">
                             <CtaButtons actions={actions} />
